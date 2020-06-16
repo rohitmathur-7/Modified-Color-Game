@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Game Login</title>
+<link rel="stylesheet" href="GameLogin.css">
+</head>
+<body>
+    <h1 id="t1">The Great RGB Game</h1>
+    <form action="">
+        <h2 id="t3">Player Name</h2>
+        <input type="text" name="name" id="name" placeholder="UserName">
+        <h2 id="t4">Enter Number of Chances</h2>
+        <input type="number" name="num" id="num" placeholder="Number of Chances">
+        <h2 id="t5">Difficulty</h2>
+        <button onclick="difficulty(event,0)" id="b1">Easy</button> <button onclick="difficulty(event,1)" id="b2">Hard</button>
+        <br>
+        <a href="ColorGame.html" onclick="sendUserInfo()" id="s1">Start Game!</a>
+    </form>
+
+    <script src="GameLogin.js"></script>
+</body>
+</html>

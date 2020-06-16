@@ -1,0 +1,111 @@
+body{
+    background-color: #232323;
+    margin: 0;
+    font-family: "arial";
+}
+.container{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows:repeat(2,1fr);
+    grid-gap: 20px;
+    justify-items: center;
+    margin: 30px auto;
+    width: 650px;
+    height: 350px;
+}
+.square{
+    width: 100%;
+    padding-bottom:100px;
+    border-radius: 15px;
+    transition: background-color 0.4s;
+}
+h1{
+    margin: 0 ;
+    padding: 20px 0;
+    color: white;
+    background-color: steelblue;
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 1.1;
+    line-height: 1.1;
+}
+.bar{
+    background-color: white;
+    text-align: center;
+    text-transform: uppercase;
+    height: 40px;
+}
+.selected{
+    color:white;
+    background-color: steelblue;
+    border: none;
+}
+button{
+    text-transform: uppercase;
+    border: none;
+    background:none;
+    height:100%;
+    font-weight: 700;
+    font-size: inherit;
+    letter-spacing: 1px ;
+    color: steelblue;
+    outline: none;
+    background-color: white;
+    margin-right: 100px;
+}
+#display{
+    display: inline-block;
+    width: 20%;
+    color: steelblue;
+    font-weight: 800;
+}
+button:hover{
+    color: white;
+    background-color: steelblue;
+    transition: all 0.3s;
+}
+#rgb{
+    font-size: 200%;
+}
+#main{
+    background-color: steelblue;
+    height: 300px;
+}
+a{
+    text-transform: uppercase;
+    border: none;
+    background:none;
+    font-weight: 700;
+    font-size: inherit;
+    letter-spacing: 1px ;
+    color: steelblue;
+    outline: none;
+    background-color: white;
+    text-decoration: none;
+}
+a:hover{
+    color: white;
+    background-color: steelblue;
+    transition: all 0.2s;
+    padding: 10px;
+}
+p{
+    font-weight: 700;
+}
+#p1{
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+#timer{
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+    font-size: 20px;
+}
+#time{
+    float: right;
+    margin-top: 10px;
+    margin-right: 5px;
+    font-size: 20px;
+}
