@@ -1,0 +1,93 @@
+body{
+    font-family: 'Cookie', cursive;
+}
+#img1{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    left: 400px;
+     top: -100px; 
+    animation: drop 0.7s forwards;
+}
+.one{
+    position: relative;
+    margin: 30px;
+    font-size: 90px;
+}
+p{
+    margin: 30px;
+    font-size: 2em;
+    line-height: 1.7em;
+    color: rgb(36, 36, 37);
+}
+#img2{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 90%;
+    width: 450px;
+}
+#img3{
+    position: absolute;
+    top: 160px;
+    left: 500px;
+    height: 400px;
+    z-index: 1;
+}
+#img4{
+    position: absolute;
+    top: 250px;
+    left: 530px;
+    height: 350px;
+}
+#div2{
+    background-color: rgb(236, 229, 236);
+    width: 1025px;
+    height: 600px;
+}
+button{
+    margin: 0px 30px; 
+    height: 3em;
+    border-radius: 30px;
+    font-weight: bolder;
+    color: white;
+    font-size: 1em;
+    background-color: rgb(240, 196, 252);
+    border-color: white;
+    position: absolute;
+    width: 200px;
+}
+button:hover{
+    cursor: pointer;
+}
+
+@keyframes drop{
+    from{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(160px);
+        opacity: 1;
+    }
+}
+
+/* #pop-up{
+    position: absolute;
+    top: -400px;
+    margin: 0 430px;
+    transform-origin: 10px 10px;
+    animation: popup 1.5s ease forwards,
+               tilt 1s 2s ease forwards;
+  }
+  @keyframes popup{
+    0%{opacity: 0;}
+    70%{transform: translateY(550px);}
+    100%{transform: translateY(500px); opacity: 1;}
+  }
+  @keyframes tilt{
+    0%{transform: translateY(500px) rotateZ(0deg);}
+    40%{transform: translateY(500px) rotateZ(90deg);}
+    70%{transform: translateY(500px) rotateZ(70deg);}
+    100%{transform: translateY(500px) rotateZ(75deg);}
+  } */

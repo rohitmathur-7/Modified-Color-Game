@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="memories.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montaga&display=swap" rel="stylesheet">
+    <script src="paper-full.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.1.3/howler.core.min.js"></script>  
+    <script type="text/paperscript" canvas="myCanvas">
+        var keyData = {
+            a: {
+                sound: new Howl({
+                  src: ['sounds/memories.mp3']
+                }),
+            },
+        }
+        function onKeyDown(event) {
+            if(keyData[event.key]){
+                keyData[event.key].sound.play();
+            }
+        }      
+    </script>
+</head>
+<body>
+    <canvas id="myCanvas" resize></canvas> 
+    <div id="div1" class="grid">
+        <span id="s1">MEMORIES</span>
+        <img src="0a8a49e4809f450ed5ae842c10fbc8ef-removebg-preview.png" alt="" id="i1">
+        <img src="IMG-20190922-WA0013-removebg-preview (1).png" alt="" id="i2">
+        <img src="IMG-20190922-WA0012-removebg-preview.png" alt="" id="i3">
+        <img src="IMG-20200221-WA0056-removebg-preview.png" alt="" id="i4">
+        <img src="IMG-20200221-WA0036-removebg-preview.png" alt="" id="i5">
+        <img src="IMG-20200221-WA0053-removebg-preview.png" alt="" id="i6">
+        <p>Finally,<br>Happy Birthday Nihi!<br>From ~ Puchiii!</p>
+    </div>
+</body>
+</html>
